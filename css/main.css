@@ -8,7 +8,51 @@ body{
 }
 
 .header-bar{
-    position: fixed;
-    background-color: lightgrey;
-    
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 5; 
+    background-color: #FFF; 
+    padding: 70px 0;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: ease;
 }
+
+.header-bar-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.header-logo{
+    display: flex; 
+    text-transform: uppercase; 
+    font-size: 18px; 
+    letter-spacing: 2px; 
+    color: #000; 
+    align-items: center; 
+}
+
+.header-logo span{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 40px; 
+    height: 40px; 
+    background-color: #000; 
+    border-radius: 4px; 
+    color: #FFF; 
+    font-size: 22px; 
+    font-weight: 600; 
+    text-align: center; 
+    margin-right: 12px; 
+}
+
+.page-links{list-style: none; display: flex; align-items: center; flex-wrap: wrap;}
+.page-links li{margin-left: 12px;}
+.page-links li a{text-decoration: none; text-transform: uppercase; font-size: 15px;}
+.page-links li a:hover{color:red;}
