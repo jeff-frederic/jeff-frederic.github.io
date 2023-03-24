@@ -1,0 +1,14 @@
+:root{
+    background-color: lightgray;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-bar{
+    position: fixed;
+    background-color: lightgrey;
+    
+}
