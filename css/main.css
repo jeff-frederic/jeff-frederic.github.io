@@ -144,5 +144,9 @@ ul {padding: 0; margin: 0;}
 .resume-section p{
     padding-left: 20px;
     padding-right: 20px;
+
+    text-indent: 30px;
+    font-size: 15pt;
+    
     color: #747474;
 }
