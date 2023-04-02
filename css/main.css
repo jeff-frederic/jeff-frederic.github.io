@@ -5,6 +5,7 @@ html {
 }
 
 body {
+    scroll-margin-top: 80px;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden; 
     background-color: #FFF; 
@@ -115,7 +116,7 @@ ul {padding: 0; margin: 0;}
     justify-content: space-between;
 }
 
-.about {
+.about-me {
     margin-top: 10;
     padding-bottom: 30px;
 }
@@ -152,25 +153,25 @@ ul {padding: 0; margin: 0;}
     color: #747474;
 }
 
-.about #skills-section{
+.about-me #skills-section{
     display: flex;
     justify-content: space-between;
     padding-bottom: 70px;
     padding-top: 50px;
 }
 
-.about #skills-section div{
+.about-me #skills-section div{
     max-width: 400px;
 }
 
-.about #skills-section ul{
+.about-me #skills-section ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.about #skills-section ul li{
+.about-me #skills-section ul li{
     padding: 6px 10px;
     margin: 5px;
     
@@ -208,11 +209,11 @@ ul {padding: 0; margin: 0;}
     color: #FFF;
 }
 
-
 .experience{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-bottom: 40px;
 }
 
 .experience-account{
@@ -257,4 +258,69 @@ ul {padding: 0; margin: 0;}
 }
 .experience-duties li{
     margin: 10px 0px;
+}
+
+.projects-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+
+.project-singular{
+    background-color: #ababab;
+    border-radius: 10px;
+    align-items: center;
+    min-width: 350px;
+    max-width: 350px;
+    padding: 10px;
+    box-shadow: 3px 3px #6d6d6d;
+    margin: 10px
+}
+
+.project-singular img{
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #373737;
+    border-radius: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.project-singular h5{
+    color: #373737;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 15pt;
+}
+
+.project-singular ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-singular ul li{
+    background-color: #FFF;
+    color:rgb(101, 101, 101);
+
+    margin: 1px 0px 1px 5px;
+    padding: 3px 7px;
+
+    border-radius: 5px;
+}
+
+.project-singular p{
+    color: #373737;
+}
+
+.project-singular button{
+    border-style: none;
+    border-radius: 4px;
+    padding: 10px 17px;
+    text-align: center;
 }
