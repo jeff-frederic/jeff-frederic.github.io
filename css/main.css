@@ -117,6 +117,7 @@ ul {padding: 0; margin: 0;}
 
 .about {
     margin-top: 10;
+    padding-bottom: 30px;
 }
 
 .resume-section-title{
@@ -133,7 +134,7 @@ ul {padding: 0; margin: 0;}
 
 .resume-section{
     margin: auto;
-    max-width: 1300px;
+    max-width: 1200px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -152,10 +153,36 @@ ul {padding: 0; margin: 0;}
     color: #747474;
 }
 
-
 .about #skills-section{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-bottom: 70px;
+    padding-top: 50px;
+}
+
+.about #skills-section div{
+    max-width: 400px;
+}
+
+.about #skills-section ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about #skills-section ul li{
+    padding: 6px 10px;
+    margin: 5px;
+    
+    border-radius: 25px;
+    border-color:rgb(175, 175, 175);
+    border-width: 1px;
+    border-style: solid;
+
+    text-align: center;
+    font-size: 12pt;
+    letter-spacing: 2px;
 }
 
 #download-resume-button{
@@ -175,15 +202,9 @@ ul {padding: 0; margin: 0;}
     border-width: 2px;
     border-style: solid;
     border-color: red;
-
 }
 
 #download-resume-button button:hover{
     background-color: rgb(255, 81, 81);
     color: #FFF;
-    
-    border-radius: 25px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgb(255, 81, 81);
 }
