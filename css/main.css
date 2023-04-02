@@ -125,6 +125,7 @@ ul {padding: 0; margin: 0;}
 
     text-align: left;
     text-decoration: underline;
+    text-underline-offset: 5px;
     text-decoration-color: red;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -147,6 +148,42 @@ ul {padding: 0; margin: 0;}
 
     text-indent: 30px;
     font-size: 15pt;
-    
+
     color: #747474;
+}
+
+
+.about #skills-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#download-resume-button{
+    display: flex;
+    justify-content: center;
+}
+
+#download-resume-button button{
+    padding: 5px 20px;
+    
+    background-color: #FFF;
+    color: red;
+    font-size: 13pt;
+    letter-spacing: 2px;
+    
+    border-radius: 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+
+}
+
+#download-resume-button button:hover{
+    background-color: rgb(255, 81, 81);
+    color: #FFF;
+    
+    border-radius: 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 81, 81);
 }
