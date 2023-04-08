@@ -205,8 +205,9 @@ ul {padding: 0; margin: 0;}
 
 .experience-account{
     margin: 10px;
-    max-width: 350px;
-    min-width: 350px;
+    max-width: 100%;
+    width: 400px;
+    height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -262,16 +263,22 @@ ul {padding: 0; margin: 0;}
     background-color: #ababab;
     border-radius: 10px;
     align-items: center;
-    min-width: 350px;
-    max-width: 350px;
+    height: auto;
+    max-width: 100%;
+    width: 320px;
     padding: 10px;
+    margin: 10px;
     box-shadow: 3px 3px #6d6d6d;
-    margin: 10px
+}
+
+.project-singular:hover{
+    box-shadow: 8px 8px #6d6d6d;
 }
 
 .project-singular img{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    max-width: 100%;
+    height: auto;
     border-radius: 3px;
     border-style: solid;
     border-color: #373737;
