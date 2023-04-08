@@ -1,127 +1,88 @@
 html {
-    font-family: 'Inter', sans-serif;
-    background-color: #FFF;
-    box-sizing: border-box;
+    scroll-padding-top: 2em;
 }
 
-body {
-    scroll-margin-top: 80px;
+body{
     font-family: 'Inter', sans-serif;
-    overflow-x: hidden; 
-    background-color: #FFF; 
-    font-weight: 400;
-    font-style: normal; 
-    color: #373737;
+    font-size: 12pt;
+    background-color: #FFF;
+
     margin: 0;
+    padding: 0;
 }
 
 iframe {border: 0; outline: none;}
 ul {padding: 0; margin: 0;}
 
-.header-bar{
-    position: fixed;
-    top: 0px;
+/* Navigation Bar */
+.nav-bar{
+    position: sticky;
+    top: 0;
     width: 100%;
-    align-items: center;
     background-color: #FFF;
 }
 
-.header-bar-inner{
+.nav-bar-inner{
     display: flex;
-    padding: 15px;
     justify-content: space-between;
-    align-items: center;
+    margin: 10px;
+    margin-top: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
 }
 
-.header-bar-inner .header-logo{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-}
-
-.header-bar-inner .header-logo span{
+.nav-bar-inner span{
     padding-top: 4px;
     padding-bottom: 4px;
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-left: 9px;
+    padding-right: 4px;
+    margin-right: 5px;
     background-color: slategray;
-    border: 2px solid black;
-    border-radius: 8px;
+    border: 3px solid black;
+    border-radius: 11px;
+    text-align: center;
 }
 
-.header-bar-inner .page-links{
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-}
-
-.header-bar-inner .page-links li{
-    padding-left: 10px;
-    text-transform: uppercase;
-}
-
-.header-bar-inner .page-links li a{
-    text-align: right;
+.nav-bar-inner a{
     text-decoration: none;
     text-transform: uppercase;
+    font-size: 15pt;
     color: black;
 }
 
-.header-bar .page-links li a:hover{
+.nav-bar-inner ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar-inner li{
+    padding-right: 10px;
+}
+
+.nav-bar-inner li a:hover{
     color: red;
 }
 
-.banner{
-    margin-top: 50px;
+
+/* 
+    How content in the page is displayed
+    when it's not the navigation bar.    
+*/
+.body-content{
+    background-color: lightgray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    border-radius: 12px;
 }
 
-.banner .container{
-    position: static;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 120px;
-    margin-right: 120px;
-    height: 100%;
-    padding: 10px;
-    background-color: #FFF;
-    align-items: center;
-    justify-content: space-evenly;
-    display: flex;
-}
-
-.banner img{
-    width: 300px;
-    border-radius: 15px;
-    float:left;
-    margin: 10px;
-}
-
-.banner section{
-    padding: 10px;
-}
-
-.banner section h3{
-    font-weight: 300;
-    font-size: xx-large;
-}
-
-.banner section h3 span{
-    font-weight: 100;
-    font-size: large;
-}
-
-.banner ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-.about-me {
-    margin-top: 10;
-    padding-bottom: 30px;
-}
-
-.resume-section-title{
+/* 
+    How the title of each section
+    looks.
+*/
+.section-title{
     font-weight: bold;
     font-size: 15pt;
 
@@ -133,80 +94,101 @@ ul {padding: 0; margin: 0;}
     letter-spacing: 1px;
 }
 
-.resume-section{
-    margin: auto;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+
+
+/* Picture & Brief Intro */
+.banner{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
 }
 
-.resume-section .container{
-    vertical-align: baseline;
+.banner img{
+    min-width: auto;
+    max-width: 350px;
+    border-radius: 15px;
 }
 
-.resume-section p{
+.banner span{
+    font-size: 12pt;
+}
+
+.banner h3{
+    font-size: 25pt;
+    padding-bottom: 20px;
+}
+
+.banner ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner li{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/* About Me */
+.about-me{
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.about-me p{
     padding-left: 20px;
     padding-right: 20px;
-
     font-size: 15pt;
-
-    color: #747474;
 }
 
-.about-me #skills-section{
+.about-me button{
+    border-radius: 17px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 5px 13px;
+    font-size: 13pt;
+}
+
+.about-me button:hover{
+    border-color: red;
+    color: red;
+}
+
+.about-me .skills-section{
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 70px;
-    padding-top: 50px;
 }
 
-.about-me #skills-section div{
-    max-width: 400px;
+.about-me .skills-section div{
+    max-width: 350px;
+    padding-right: 40px;
 }
 
-.about-me #skills-section ul{
+.about-me .skills-section ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
 }
 
-.about-me #skills-section ul li{
-    padding: 6px 10px;
-    margin: 5px;
-    
-    border-radius: 25px;
-    border-color:rgb(175, 175, 175);
-    border-width: 1px;
-    border-style: solid;
-
-    text-align: center;
-    font-size: 12pt;
-    letter-spacing: 2px;
-}
-
-#download-resume-button{
-    display: flex;
-    justify-content: center;
-}
-
-#download-resume-button button{
-    padding: 5px 20px;
-    
+.about-me .skills-section li{
+    padding: 5px 10px;
     background-color: #FFF;
-    color: red;
-    font-size: 13pt;
-    letter-spacing: 2px;
-    
-    border-radius: 25px;
-    border-width: 2px;
+    border-radius: 13px;
+    margin: 5px;
+    border-color: black;
     border-style: solid;
-    border-color: red;
+    border-width: 1px;
 }
 
-#download-resume-button button:hover{
-    background-color: red;
-    color: #FFF;
+
+
+/* Experience */
+
+.experiences{
+    padding-top: 15px;
 }
 
 .experience{
@@ -259,6 +241,7 @@ ul {padding: 0; margin: 0;}
 .experience-duties li{
     margin: 10px 0px;
 }
+
 
 .projects-section{
     display: flex;
