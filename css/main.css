@@ -14,6 +14,8 @@ body{
 iframe {border: 0; outline: none;}
 ul {padding: 0; margin: 0;}
 
+
+
 /* Navigation Bar */
 .nav-bar{
     position: sticky;
@@ -69,7 +71,7 @@ ul {padding: 0; margin: 0;}
     when it's not the navigation bar.    
 */
 .body-content{
-    background-color: lightgray;
+    background-color: rgb(226, 226, 226);
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -99,22 +101,25 @@ ul {padding: 0; margin: 0;}
 /* Picture & Brief Intro */
 .banner{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px;
 }
 
 .banner img{
-    min-width: auto;
-    max-width: 350px;
+    max-width: 100%;
+    height: auto;
+    width: 350px;
     border-radius: 15px;
 }
 
 .banner span{
+    color: rgb(95, 95, 95);
     font-size: 12pt;
 }
 
 .banner h3{
-    font-size: 25pt;
+    font-size: 23pt;
     padding-bottom: 20px;
 }
 
@@ -174,7 +179,7 @@ ul {padding: 0; margin: 0;}
 }
 
 .about-me .skills-section li{
-    padding: 5px 10px;
+    padding: 5px 12px;
     background-color: #FFF;
     border-radius: 13px;
     margin: 5px;
@@ -185,7 +190,7 @@ ul {padding: 0; margin: 0;}
 
 
 
-/* Experience */
+/* Experience Section*/
 
 .experiences{
     padding-top: 15px;
@@ -194,13 +199,16 @@ ul {padding: 0; margin: 0;}
 .experience{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-bottom: 40px;
 }
 
 .experience-account{
     margin: 10px;
-    max-width: 500px;
+    max-width: 350px;
+    min-width: 350px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .experience-header{
@@ -214,7 +222,7 @@ ul {padding: 0; margin: 0;}
 }
 
 .experience-header .experience-timeline{
-    color: rgb(101, 101, 101);
+    color: rgb(62, 62, 62);
     font-size: 11pt;
 }
 
@@ -230,7 +238,7 @@ ul {padding: 0; margin: 0;}
 }
 
 .experience-account .experience-text{
-    color: #747474;
+    color: black;
     font-size: 12pt;
 }
 
