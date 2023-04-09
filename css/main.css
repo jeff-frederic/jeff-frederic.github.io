@@ -134,6 +134,14 @@ ul {padding: 0; margin: 0;}
     padding-right: 5px;
 }
 
+.banner svg{
+    color: black;
+}
+
+.banner svg:hover{
+    color: red;
+}
+
 
 /* About Me */
 .about-me{
