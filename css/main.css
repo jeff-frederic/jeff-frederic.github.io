@@ -193,7 +193,8 @@ ul {padding: 0; margin: 0;}
 /* Experience Section*/
 
 .experiences{
-    padding-top: 15px;
+    padding: 20px;
+    padding-bottom: 30px;
 }
 
 .experience{
@@ -252,6 +253,13 @@ ul {padding: 0; margin: 0;}
 }
 
 
+/* Projects */
+
+.projects{
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
 .projects-section{
     display: flex;
     flex-wrap: wrap;
@@ -265,14 +273,14 @@ ul {padding: 0; margin: 0;}
     align-items: center;
     height: auto;
     max-width: 100%;
-    width: 320px;
+    width: 300px;
     padding: 10px;
     margin: 10px;
     box-shadow: 3px 3px #6d6d6d;
 }
 
 .project-singular:hover{
-    box-shadow: 8px 8px #6d6d6d;
+    box-shadow: 6px 6px #6d6d6d;
 }
 
 .project-singular img{
@@ -302,7 +310,7 @@ ul {padding: 0; margin: 0;}
     flex-wrap: wrap;
 }
 
-.project-singular ul li{
+.project-singular li{
     background-color: #FFF;
     color:rgb(101, 101, 101);
 
@@ -313,12 +321,25 @@ ul {padding: 0; margin: 0;}
 }
 
 .project-singular p{
+    word-wrap: break-word;
     color: #373737;
+    height: auto;
+    max-width: 100%;
+    width: 300px;
 }
 
-.project-singular button{
-    border-style: none;
-    border-radius: 4px;
-    padding: 10px 17px;
-    text-align: center;
+.project-singular .buttons{
+    height: auto;
+    display: flex;
+    justify-content: center;    
+}
+
+.project-singular .buttons button{
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+
+    margin: 5px;
+    padding: 3px 10px;
+    font-size: 12pt;
 }
