@@ -146,7 +146,7 @@ ul {padding: 0; margin: 0;}
 /* About Me */
 .about-me{
     padding: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .about-me p{
@@ -202,7 +202,7 @@ ul {padding: 0; margin: 0;}
 
 .experiences{
     padding: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .experience{
@@ -265,7 +265,7 @@ ul {padding: 0; margin: 0;}
 
 .projects{
     padding: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .projects-section{
@@ -350,4 +350,17 @@ ul {padding: 0; margin: 0;}
     margin: 5px;
     padding: 3px 10px;
     font-size: 12pt;
+}
+
+
+
+
+
+
+
+footer{
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+    color: rgb(156, 156, 156);
 }
