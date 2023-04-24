@@ -1,9 +1,11 @@
-/* 
-    FONTS: Georgia, Arial, serif 
-*/
 
 
-html, body{
+
+html{
+    scroll-padding-top: 2em;
+} 
+
+body{
     padding: 0;
     margin: 0;
 
@@ -13,6 +15,7 @@ html, body{
 
 #navbar{
     position: sticky;
+    top: 0;
 
     display: inline-flex;
     align-items: center;
@@ -20,7 +23,7 @@ html, body{
     width: 100%;
     height: 100px;
     
-    animation: navbar-load 500ms;    
+    animation: navbar-load 500ms;
 }
 
 #nav-name{
@@ -65,7 +68,28 @@ html, body{
 }
 
 
-footer{
+#sm-links{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#sm-links li{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: red;
+}
+
+.section-center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* footer{
     position: absolute;
     bottom: 0;
     
@@ -74,10 +98,10 @@ footer{
 
     background-color: grey;
  
-   text-align: center;
-   font-family: Arial;
-   font-size: 10pt;
-}
+    text-align: center;
+    font-family: Arial;
+    font-size: 10pt;
+} */
 
 @keyframes navbar-load {
     0% {
@@ -85,5 +109,25 @@ footer{
     }
     100%{
         transform: translateY(0);
+    }
+}
+
+
+@keyframes load-left {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+@keyframes load-right {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
     }
 }
