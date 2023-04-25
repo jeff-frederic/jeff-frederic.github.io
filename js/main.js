@@ -2,10 +2,10 @@
 
 function scrollFunction() {
     let navbar =  document.getElementById("navbar");
-    if (document.documentElement.scrollTop >= 50) {
-        navbar.style = "padding-top: 10px; padding-bottom: 10px; backdrop-filter: blur(20px);";
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        navbar.style = "padding-top: 10px; padding-bottom: 10px; backdrop-filter: blur(50px); ";
     } else {
-        navbar.style = "padding-top: 30px; padding-bottom: 30px; backdrop-filter: blur(0px);";
+        navbar.style = "padding-top: 30px; padding-bottom: 30px; backdrop-filter: blur(0px); ";
     }
 }
 
@@ -16,7 +16,7 @@ function reveal() {
     for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 50;
+        var elementVisible = 1;
 
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
