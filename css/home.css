@@ -2,14 +2,17 @@
 
 
 html{
-    scroll-padding-top: 2em;
+    scroll-padding-top: 5em;
+    padding: 0;
+    margin: 0;
 } 
 
 body{
     padding: 0;
     margin: 0;
 
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 20px;
 }
 
 
@@ -21,9 +24,11 @@ body{
     align-items: center;
 
     width: 100%;
-    height: 100px;
-    
-    animation: navbar-load 500ms;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    animation: load-bottom 1000ms;
 }
 
 #nav-name{
@@ -34,7 +39,8 @@ body{
     font-size: 16pt;
     font-family: Arial, Georgia, serif;
     padding: 7pt;
-    margin: 7pt;
+    margin-left: 7pt;
+    margin-right: 7pt;
 
     border: 2px solid lightgray;
     border-radius: 10pt;
@@ -59,8 +65,6 @@ body{
 
     padding-left: 5px;
     padding-right: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
 }
 
 #nav-links a:hover{
@@ -85,25 +89,124 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-/* footer{
-    position: absolute;
-    bottom: 0;
+.section-align{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.section-title{
+    font-size: 15pt;
+    font-family: Arial, serif;
+
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: red;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     
-    width: 100%;
-    height: 15px;
+    color: white;
+}
 
-    background-color: grey;
- 
-    text-align: center;
-    font-family: Arial;
-    font-size: 10pt;
-} */
+.skill-list{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 250px;
+    padding: 0;
+    list-style: none;
+}
 
-@keyframes navbar-load {
+.skill-list li{
+    color: grey;
+    padding: 10px;
+    
+    font-family: Arial, serif;
+    font-size: 13pt;
+
+    border: 2px solid lightgrey;
+    border-radius: 12pt;
+    margin: 7px;
+}
+
+.experience-account{
+    margin: 10px;
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:white;
+    font-family: Arial, serif;
+}
+
+.experience-header{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.experience-header p{
+    margin: 0;
+    padding: 0;
+}
+
+.experience-header .experience-timeline{
+    font-size: 11pt;
+}
+
+.experience-header .experience-company{
+    font-size: 15pt;
+}
+
+.experience-header .experience-role{
+    font-size: 13pt;
+    font-weight: 700;
+}
+
+.experience-account .experience-text{
+    font-size: 12pt;
+}
+
+.experience-duties{
+    padding-left: 30px;
+    list-style: circle;
+}
+.experience-duties li{
+    margin: 10px 0px;
+}
+
+
+.button{
+    border: 3px solid white;
+    border-radius: 10pt;
+    padding: 10px 5px;
+    color: white;
+    background-color: black;
+}
+
+.button:hover{
+    border-color: red;
+}
+
+.reveal{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 500ms all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+@keyframes load-bottom {
     0% {
         transform: translateY(-100%);
     }
@@ -111,7 +214,6 @@ body{
         transform: translateY(0);
     }
 }
-
 
 @keyframes load-left {
     0%{
@@ -122,12 +224,20 @@ body{
     }
 }
 
-
 @keyframes load-right {
     0%{
         transform: translateX(-100%);
     }
     100%{
         transform: translateX(0%);
+    }
+}
+
+@keyframes load-up{
+    0%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0%);
     }
 }
