@@ -1,0 +1,110 @@
+
+
+:root{
+    --bg_color: black;
+    --text-color: white;
+    --text-color-hover: lightgrey;
+
+    --font: Arial, Helvetica, sans-serif;
+    --font-size-large: 19pt;
+    --font-size-mid: 13pt;
+    --font-size-small: 11pt;
+
+    --body-width: 80%;
+    --body-height: 100%;
+}
+
+
+html{
+    color: var(--text-color);
+    background-color: var(--bg_color);
+    font-family: var(--font);
+    overflow-x: hidden;
+    margin-top: 0;
+    padding-bottom: 20px;
+    min-height: 100%;
+    height: auto;
+}
+body{
+    width: var(--body-width);
+    height: var(--body-height);
+
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.header-bar{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: var(--bg_color);
+    z-index: 10000;
+}
+.header-name-link {
+    text-decoration: none;
+    font-size: var(--font-size-mid);
+    color: var(--text-color);
+}
+.header-name-link:hover{
+    color: var(--text-color-hover);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content{
+    width: 75%;
+}
+
+.section{
+    margin-bottom: 50px;
+    height: 85vh;
+    border: 2px solid white;
+    scroll-margin-top: 100px;
+}
+
+
+.section-nav-container{
+    width: 20%;
+}
+.section-nav-container ul{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 115px;
+    list-style: none;
+    padding: 0;
+    margin: 15px;
+}
+
+.section-nav-item{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    align-self: center;
+}
+.section-nav-item a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: var(--font-size-large);
+    font-family: 'Courier New', Courier, monospace;
+}
+.section-nav-item a span{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: var(--font-size-small);
+}
+.section-nav-item a:hover{
+    color: red;
+}
+
+#home{
+    background-color: blue;
+}
