@@ -69,8 +69,8 @@ body{
 .section{
     margin-bottom: 50px;
     height: 85vh;
-    border: 2px solid white;
     scroll-margin-top: 100px;
+    position: relative;
 }
 
 
@@ -105,6 +105,56 @@ body{
     color: red;
 }
 
-#home{
-    background-color: blue;
+.next-link{
+    position: absolute;
+    text-decoration: none;
+    bottom: 0;
+}
+
+.next-link-number{
+    color: grey;
+    font-size: 10pt;
+}
+
+.next-link-label{
+    text-transform: uppercase;
+    color: white;
+}
+
+.home-section{
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
+
+/* COOL CANVAS REPEATING ANIMATION */
+.home-section div{
+    padding-bottom: 30px;
+}
+
+.home-section div canvas{
+    display: inherit;
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+}
+
+/* MY NAME */
+.home-section span{
+    font-family: var(--font);
+    font-weight: bolder;
+    font-size: 40pt;
+    text-size-adjust: auto;
+    letter-spacing: 3px;
+}
+
+.home-section hr{
+    position: absolute;
+    width: 15%;
+}
+
+.home-section p{
+    padding: 0;
+    text-transform: uppercase;
+    word-spacing: 3px;
 }
