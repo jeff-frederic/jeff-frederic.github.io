@@ -1,7 +1,6 @@
 const pi = Math.PI;
 let degree = 10;
 let angle = 0;
-let slider;
 
 const cWidth = 400;
 const cHeight = 300;
