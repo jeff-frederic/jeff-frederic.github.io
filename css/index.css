@@ -123,20 +123,12 @@ body{
 
 .home-section{
     display: block;
-    padding-top: 5%;
     padding-bottom: 15%;
 }
 
 /* COOL CANVAS REPEATING ANIMATION */
 .home-section div{
     padding-bottom: 30px;
-}
-
-.home-section div canvas{
-    display: inherit;
-    width: 200px;
-    height: 200px;
-    background-color: grey;
 }
 
 /* MY NAME */
