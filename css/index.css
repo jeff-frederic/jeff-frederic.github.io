@@ -148,7 +148,8 @@ body{
 
 .about-section img{
     max-width: 40%;
-    border-radius: 10px;
+    height: auto;
+    border-radius: 15px;
     border: 2px solid white;
     filter: 
         drop-shadow(20px -20px 4px #dd444454)
@@ -161,6 +162,7 @@ body{
     padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 20px;
     border-radius: 20px;
 }
 
@@ -173,4 +175,11 @@ body{
 
 .about-section p a{
     color: white;
+}
+
+.section-title{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: var(--font-size-large);
+    
 }
