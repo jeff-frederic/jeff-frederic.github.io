@@ -180,7 +180,7 @@ body{
 .section-title{
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-size: var(--font-size-large);
+    font-size: xx-large;
     font-weight: bolder;
 }
 
@@ -188,12 +188,41 @@ body{
 .skills-section{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 40px;
 }
 
 .skills-container{
-
+    width: 30%;
 }
 
 .skills-title{
-    
+    color: grey;
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.skills-secondary-title{
+    color: white;
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+.skills-list li{
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    padding: 5px 10px;
+    margin: 3px;
+    border: 1px solid white;
+    border-radius: 20px;
 }
