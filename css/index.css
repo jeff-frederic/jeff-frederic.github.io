@@ -226,3 +226,69 @@ body{
     border: 1px solid white;
     border-radius: 20px;
 }
+
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    justify-content: space-between;
+}
+
+.singular-project{
+    width: 30%;
+    max-width: 30%;
+    height: max-content;
+    justify-content: center;
+    padding: 10px 0px;
+
+}
+
+.project-image{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.project-image img{
+    width: 100%;
+}
+
+.project-title{
+    color: white;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.project-description{
+    color: rgb(139, 139, 139);
+}
+
+.project-tools{
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bolder;
+}
+
+.project-buttons{
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-buttons a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 3px 15px;
+    border-radius: 10px;
+}
+
+.project-view-link{
+    color: black;
+    background-color: lightgray;
+}
+
+.project-src-link{
+    color: white;
+    border: 2px solid white;
+}
