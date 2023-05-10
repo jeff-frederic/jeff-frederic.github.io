@@ -18,7 +18,7 @@ function draw() {
   if(degree >= 90){
     degree = -1*degree;
   }
-  frameRate(30);
+  frameRate(40);
   stroke(255);
   strokeWeight(2);
   translate(width * 0.5, height);
