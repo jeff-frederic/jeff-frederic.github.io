@@ -28,8 +28,8 @@ html{
 body{
     width: var(--body-width);
     height: var(--body-height);
-
-    margin-top: 0;
+    justify-content: center;
+    margin-top: 0; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -37,13 +37,15 @@ body{
 
 .header-bar{
     position: sticky;
-    top: 0px;
+    top: -1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
     background-color: var(--bg_color);
-    z-index: 10000;
+    z-index: 5000000;
+    min-width: 100%;
+    max-width: 100%;
 }
 .header-name-link {
     text-decoration: none;
@@ -56,6 +58,31 @@ body{
     text-underline-offset: 3px;
 }
 
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #FFF;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+  /* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
 
 .wrapper{
     display: flex;
@@ -148,7 +175,7 @@ body{
 
 .about-section img{
     max-width: 40%;
-    height: auto;
+    height: min-content;
     border-radius: 15px;
     border: 2px solid white;
     filter: 
@@ -158,8 +185,9 @@ body{
 
 .about-section p{
     max-width: 40%;
+    min-width: 300px;
     border: 1px solid grey;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
@@ -194,6 +222,8 @@ body{
 
 .skills-container{
     width: 30%;
+    min-width: 250px;
+    margin-top: 50px;
 }
 
 .skills-title{
@@ -231,16 +261,17 @@ body{
     display: flex;
     flex-wrap: wrap;
     padding-top: 40px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .singular-project{
     width: 30%;
     max-width: 30%;
+    min-width: 250px;
     height: max-content;
     justify-content: center;
     padding: 10px 0px;
-
+    margin: 10px;
 }
 
 .project-image{
@@ -302,4 +333,34 @@ body{
 
 .contact-section a{
     text-decoration: none;
+}
+
+
+/* RESPONSIVENESS */
+@media (max-width: 1200px){
+    .section-nav-container{
+        display: none;
+    }
+    .main-content{
+        width: 100%;
+    }
+    .hamburger-menu{
+        display: inline-block;
+    }
+}
+
+@media (max-width: 1000px){
+    .about-section img{
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 600px){
+    body{
+        width: 95%;
+        height: auto;
+    }
+    .about-section img{
+        min-width: 200px;
+    }
 }
