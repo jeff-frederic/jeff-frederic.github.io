@@ -292,3 +292,14 @@ body{
     color: white;
     border: 2px solid white;
 }
+
+.contact-section{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contact-section a{
+    text-decoration: none;
+}
