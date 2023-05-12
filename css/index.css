@@ -178,6 +178,7 @@ body{
     height: min-content;
     border-radius: 15px;
     border: 2px solid white;
+    object-fit: cover;
     filter: 
         drop-shadow(20px -20px 4px #dd444454)
         drop-shadow(-20px 20px 4px #4884de54);
