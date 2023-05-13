@@ -132,6 +132,24 @@ body{
     color: red;
 }
 
+.hidden-nav-bar{
+    position: fixed;
+    top: 90px;
+    width: 200px;
+    right: 10%;
+    background-color: #424242ee;
+    display: none;
+    z-index: 99;
+    font-weight: bold;
+}
+
+.hidden-nav-bar ul{
+    list-style: none;
+}
+
+.active{
+    display: block;
+}
 
 .home-section{
     display: block;
@@ -341,6 +359,12 @@ body{
 
 
 /* RESPONSIVENESS */
+@media (min-width: 1200px){
+    .hidden-nav-bar{
+        display: none;;
+    }
+}
+
 @media (max-width: 1200px){
     .section-nav-container{
         display: none;
@@ -362,5 +386,7 @@ body{
         width: 95%;
         height: auto;
     }
-    
+    .hidden-nav-bar{
+        right: 5%;
+    }
 }
