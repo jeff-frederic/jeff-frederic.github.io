@@ -13,7 +13,7 @@
         <a href="#" class="header-name-link">
             <span>JEFFERY-FREDERIC</span>
         </a>
-        <div class="hamburger-menu" onclick="myFunction(this)">
+        <div id="ham-menu" class="hamburger-menu" onclick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -205,14 +205,22 @@
     <div>
         <nav id="navbar" class="hidden-nav-bar">
             <ul>
-                <li class="section-nav-item"><a href="#home">HOME</a></li>
-                <li class="section-nav-item"><a href="#about">ABOUT</a></li>
-                <li class="section-nav-item"><a href="#skills">SKILLS</a></li>
-                <li class="section-nav-item"><a href="#projects">PROJECTS</a></li>
-                <li class="section-nav-item"><a href="#contact">CONTACT</a></li>
+                <li class="hidden-nav-item"><a href="#home">HOME</a></li>
+                <li class="hidden-nav-item"><a href="#about">ABOUT</a></li>
+                <li class="hidden-nav-item"><a href="#skills">SKILLS</a></li>
+                <li class="hidden-nav-item"><a href="#projects">PROJECTS</a></li>
+                <li class="hidden-nav-item"><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </div>
+    <script>
+        const ham = document.getElementById("ham-menu");
+        const nav = document.getElementById("navbar");
+        document.querySelectorAll(".hidden-nav-item").forEach(n => n.addEventListener("click", () => {
+            ham.classList.remove("change");
+            nav.classList.remove("active");
+        }))
+    </script>
 
     <script src="js/sketch.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>

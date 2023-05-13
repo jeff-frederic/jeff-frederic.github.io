@@ -132,9 +132,28 @@ body{
     color: red;
 }
 
+.hidden-nav-item{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    align-self: center;
+}
+.hidden-nav-item a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: var(--font-size-large);
+    font-family: 'Courier New', Courier, monospace;
+}
+.hidden-nav-item a span{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: var(--font-size-small);
+}
+.hidden-nav-item a:hover{
+    color: red;
+}
+
 .hidden-nav-bar{
     position: fixed;
-    top: 100px;
+    top: 99px;
     width: 200px;
     right: 10%;
     background-color: #424242ee;
