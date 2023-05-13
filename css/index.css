@@ -134,7 +134,7 @@ body{
 
 .hidden-nav-bar{
     position: fixed;
-    top: 90px;
+    top: 100px;
     width: 200px;
     right: 10%;
     background-color: #424242ee;
