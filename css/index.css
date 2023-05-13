@@ -173,16 +173,19 @@ body{
     padding-bottom: 50px;
 }
 
-.about-section img{
+.profile-picture-container{
     max-width: 40%;
-    height: min-content;
-    border-radius: 15px;
-    border: 2px solid white;
-    object-fit: cover;
-    filter: 
-        drop-shadow(20px -20px 4px #dd444454)
-        drop-shadow(-20px 20px 4px #4884de54);
+    min-width: 300px;
+    text-align: center;
+    padding: 15px;
 }
+
+.profile-picture-container img{
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(20px -20px 4px #dd444454) drop-shadow(-20px 20px 4px #4884de54);
+}
+
 
 .about-section p{
     max-width: 40%;
@@ -351,9 +354,7 @@ body{
 }
 
 @media (max-width: 1000px){
-    .about-section img{
-        min-width: 400px;
-    }
+    
 }
 
 @media (max-width: 600px){
@@ -361,7 +362,5 @@ body{
         width: 95%;
         height: auto;
     }
-    .about-section img{
-        min-width: 200px;
-    }
+    
 }
