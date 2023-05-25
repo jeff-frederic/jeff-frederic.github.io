@@ -2,7 +2,7 @@ const pi = Math.PI;
 let degree = 10;
 let angle = 0;
 
-const cWidth = 400;
+const cWidth = 300;
 const cHeight = 300;
 
 

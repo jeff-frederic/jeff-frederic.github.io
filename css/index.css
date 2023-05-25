@@ -14,14 +14,12 @@ html{
     color: var(--text-color);
     background-color: var(--bg_color);
     font-family: var(--font);
-    min-height: 100%;
-    height: 100%;
 }
 
 body{
     width: var(--body-width);
     height: var(--body-height);
-    min-height: 115%;
+    min-height: 100%;
     justify-content: center;
     margin-top: 0; 
     margin-left: auto;
@@ -89,6 +87,7 @@ body{
     justify-content: space-between;
     bottom: 0;
     min-width: 80%;
+    z-index: -100;
 }
 
 /* Left Panel */
@@ -163,4 +162,139 @@ body{
 
 .github-icon{
     color: white;
+}
+
+
+/* MAIN CONTENT */
+
+main{
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section{
+    margin-bottom: 50px;
+}
+
+.introduction{
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 50px;
+    scroll-margin-top: 100px;
+}
+
+.my-name{
+    font-family: var(--font);
+    font-weight: bolder;
+    font-size: 40pt;
+    text-size-adjust: auto;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.introduction hr{
+    position: absolute;
+    width: 20%;
+}
+
+.introduction p {
+    padding: 0;
+    text-transform: uppercase;
+    word-spacing: 3px;
+}
+
+.readme{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 15px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.readme-title{
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+}
+
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.aboutme{
+    margin: 10px;
+}
+
+.aboutme svg{
+    width: 24px;
+    height: 24px;
+}
+
+.aboutme ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutme li{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-width: 300px;
+    height: max-content;
+}
+
+.aboutme p{
+    padding-left: 10px;
+    color: white;
+}
+
+.aboutme a{
+    color: white;
+}
+
+
+.aboutme svg{
+    color: white;
+}
+
+.skills-section{
+    margin: 10px;
+    max-width: 250px;
+    min-width: 250px;
+}
+
+.skills-section ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-section svg{
+    height: 80px;
+    width: 80px;
+}
+
+.skills-subtitle{
+    color: grey;
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.skills-title{
+    color: white;
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: bolder;
 }
