@@ -298,3 +298,71 @@ main{
     font-size: x-large;
     font-weight: bolder;
 }
+
+.projects-header{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.projects-container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project{
+    width: 20%;
+    max-width: 20%;
+    min-width: 250px;
+    height: max-content;
+    justify-content: center;
+    padding: 10px 10px;
+    border: 2px dotted grey;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.project:hover{
+    border: 2px solid grey;
+    box-shadow: 0px 0px 10px white;
+}
+
+.project-image{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.project-image img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.project-title{
+    color: white;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.project-description{
+    color: rgb(139, 139, 139);
+}
+
+.project-tools{
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bolder;
+}
+
+.project-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-links a{
+    text-decoration: none;
+    color: white;
+}
