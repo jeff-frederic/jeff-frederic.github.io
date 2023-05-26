@@ -173,6 +173,7 @@ main{
 
 .section{
     margin-bottom: 50px;
+    scroll-margin-top: 100px;
 }
 
 .introduction{
@@ -296,7 +297,7 @@ main{
     font-weight: bolder;
 }
 
-.projects-header{
+.section-header{
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: xx-large;
@@ -362,4 +363,14 @@ main{
 .project-links a{
     text-decoration: none;
     color: white;
+}
+
+.contact-links{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-link{
+    text-decoration: none;
 }
