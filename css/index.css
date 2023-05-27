@@ -107,6 +107,37 @@ body{
 }
 
 
+.hidden-navbar-links{
+    display: none;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    right: 5%;
+    top: 60px;
+    padding: 20px 5px;
+    margin: 0;
+}
+
+.hidden-navbar-link{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    padding: 1px 15px;
+}
+
+.hidden-navbar-link span{
+    color: grey;
+    font-size: small;
+}
+
+.hidden-navbar-link:hover{
+    color: red;
+}
+
+.active{
+    display: inline-block;
+}
+
 /* Left Panel */
 .left-panel{
     width: 20px;
@@ -444,5 +475,12 @@ main{
 
     .introduction p{
         font-size: 11pt;
+    }
+}
+
+
+@media (min-width: 1000px){
+    .hidden-navbar-links{
+        display: none;
     }
 }

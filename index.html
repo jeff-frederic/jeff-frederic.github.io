@@ -37,12 +37,21 @@
             <li><a href="#contact" class="navbar-link"><span>04</span> Contact</a></li>
         </ul>
         
-        <div id="ham-menu" class="hamburger-menu" onclick="myFunction(this)">
+        <ul id="hidden-navbar" class="hidden-navbar-links">
+            <li><a href="#home" class="hidden-navbar-link"><span>00</span> Home</a></li>
+            <li><a href="#about" class="hidden-navbar-link"><span>01</span> About</a></li>
+            <li><a href="#projects" class="hidden-navbar-link"><span>02</span> Projects</a></li>
+            <!-- <li><a href="#" class="navbar-link"><span>03</span> Contributions</a></li> -->
+            <li><a href="#contact" class="hidden-navbar-link"><span>04</span> Contact</a></li>
+        </ul>
+
+        <div id="ham-menu" class="hamburger-menu" onclick="hamMenu(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
-    
+
+            
     </nav>
 
     <!-- Left Panel with email -->
@@ -367,5 +376,18 @@
     </main>
 
 </body>
-
+<script>
+    function hamMenu(x) {
+        x.classList.toggle("change");
+        document.getElementById("hidden-navbar").classList.toggle("active");
+    }
+</script>
+<script>
+    const ham = document.getElementById("ham-menu");
+    const nav = document.getElementById("hidden-navbar");
+    document.querySelectorAll(".hidden-navbar-link").forEach(n => n.addEventListener("click", () => {
+        ham.classList.remove("change");
+        nav.classList.remove("active");
+    }))
+</script>
 </html>
