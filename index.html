@@ -3,8 +3,7 @@
 <!-- 
     TODO:
     - Finish navbar with animations
-    - Change navbar icon logo
-    - Add display functionality
+    - Center logo
     - Add resume download button
  -->
 
@@ -25,7 +24,9 @@
     <nav class="navbar">
 
         <a href="#" class="navbar-icon">
-            J
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-asterisk" viewBox="0 0 16 16">
+                <path d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
+            </svg>
         </a>
 
         <ul class="navbar-links">
@@ -36,6 +37,12 @@
             <li><a href="#contact" class="navbar-link"><span>04</span> Contact</a></li>
         </ul>
         
+        <div id="ham-menu" class="hamburger-menu" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    
     </nav>
 
     <!-- Left Panel with email -->
@@ -81,9 +88,9 @@
 
     
 
-
     <!-- Main Content -->
     <main>
+        <!-- Introduction -->
         <div class="section introduction" id="home">
             <div id="fractal-tree-animation" style="margin-top: 15px; margin-bottom: 50px; text-align: center;">
                 <script src="js/sketch.js"></script>
@@ -102,6 +109,7 @@
             </p>
         </div>
 
+        <!-- README -->
         <div class="section" id="about">
             <div class="readme">
                 <span class="readme-title">
@@ -116,7 +124,7 @@
                                     <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
                                 </svg>
                                 <p>
-                                    Senior at <a href="">Arizona State University</a>
+                                    Senior at <a href="https://www.asu.edu/" target="_blank">Arizona State University</a>
                                 </p>
                             </li>
                             <li>
@@ -129,14 +137,14 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-vcard-fill" viewBox="0 0 16 16">
                                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5ZM9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8Zm1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5Zm-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96c.026-.163.04-.33.04-.5ZM7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z"/>
                                 </svg>
-                                <p>Former Technical Officer for the <a href="https://thesoda.io/">SoDA</a> club</p>
+                                <p>Former Technical Officer for the <a href="https://thesoda.io/" target="_blank">SoDA</a> club</p>
                             </li>
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-btn" viewBox="0 0 16 16">
                                     <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
                                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
                                 </svg>
-                                <p>Programming <a href="https://www.youtube.com/@JefferyFrederic">content</a> creator</p>
+                                <p>Programming <a href="https://www.youtube.com/@JefferyFrederic" target="_blank">content</a> creator</p>
                             </li>
                             <li>
                                 <svg fill="#ffffff" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zM20.811 13.01H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z"></path></g>
@@ -243,6 +251,7 @@
             </div>
         </div>
 
+        <!-- Projects -->
         <div class="section" id="projects">
             <span class="section-header">Projects</span>
             <div class="projects-container">
@@ -330,6 +339,7 @@
             </div>
         </div>
 
+        <!-- Contact -->
         <div class="section" id="contact">
             <span class="section-header">Contact</span>
             <div class="contact-links">
